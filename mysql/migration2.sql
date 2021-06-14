@@ -17,7 +17,8 @@ state_name varchar (25) not null
 insert into cities (city_name, state_name) values 
 ("Parigi", "Francia"),
 ("Roma", "Italia"),
-("Londra", "Regno Unito");
+("Londra", "Regno Unito"),
+("Tokyo", "Giappone");
 
 commit; 
 
@@ -33,7 +34,8 @@ insert into films (film_name, film_year, film_director) values
 ("Amelie", "2001", "Jeunet"),
 ("La dolce vita", "1960", "Fellini"),
 ("Harry Potter", "2001", "Columbus"),
-("Love, Actually", "2003", "Curtis");
+("Love, Actually", "2003", "Curtis"),
+("Lost in translation", "2003", "Coppola");
 
 commit;
 
@@ -49,7 +51,8 @@ insert into scenes (scene_name) values
 ("Cioccolateria"),
 ("Fontana"),
 ("Stazione"),
-("Ballo in casa");
+("Ballo in casa"),
+("Scena finale");
 
 commit;
 
@@ -65,7 +68,8 @@ insert into locations (location_name) values
 ("Café des 2 Moulins"),
 ("Fontana di Trevi"),
 ("King's Cross"),
-("Downing Street");
+("Downing Street"),
+("Shinjuku");
 
 commit;
 
@@ -82,7 +86,8 @@ insert into locations_scenes (location_id, scene_id) values
 ("1", "1"),
 ("2", "2"),
 ("3", "3"),
-("4", "4");
+("4", "4"),
+("5", "5");
 
 
 commit; 
