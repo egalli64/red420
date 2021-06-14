@@ -26,5 +26,5 @@ film_director varchar (30) not null
 
 insert into films ( film_id, film_name, film_year, film_director) values ("1", "Amelie", "2001", "Jeunet");
 
-commit; 
+commit;
 
