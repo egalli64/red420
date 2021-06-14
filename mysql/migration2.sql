@@ -1,7 +1,7 @@
 use red;
 
 drop table if exists cities;
-drop table if exists film;
+drop table if exists films;
 
 
 create table cities (
@@ -11,8 +11,9 @@ state_name varchar (25) not null
 
 );
 
-insert into cities ( city_id, city_name, state_name)
-values ("300", "Parigi", "Francia") ;
+insert into cities (city_name, state_name) values 
+("Parigi", "Francia"),
+("Roma", "Italia");
 
 commit; 
 
@@ -24,7 +25,9 @@ film_director varchar (30) not null
 
 );
 
-insert into films ( film_id, film_name, film_year, film_director) values ("1", "Amelie", "2001", "Jeunet");
+insert into films (film_name, film_year, film_director) values 
+("Amelie", "2001", "Jeunet"),
+("La dolce vita", "1960", "Fellini");
 
 commit;
 
