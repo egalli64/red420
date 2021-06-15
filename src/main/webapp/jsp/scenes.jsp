@@ -9,7 +9,7 @@
 <body>
 
 	<h1>Scenes</h1>
-	<>
+	<table>
 		<tr>
 			<th>scene_id</th>
 			<th>scene_name</th>
