@@ -5,6 +5,7 @@ drop table if exists locations;
 drop table if exists cities;
 drop table if exists scenes;
 drop table if exists films;
+drop table if exists users;
 
 
 create table cities (
@@ -89,5 +90,19 @@ insert into locations_scenes (location_id, scene_id) values
 ("4", "4"),
 ("5", "5");
 
-
 commit; 
+
+create table users (
+user_id integer primary key not null auto_increment,
+user_name varchar (30) not null,
+user_password varchar (30) not null
+);
+
+insert into users (user_name, user_password) values
+("Francesca Contestabile", "arSud"),
+("Sabrina Fazio", "pasta"),
+("Alessia La Guardia", "bootstrap"),
+("Marzia Michetti", "seTaja"),
+("Giorgia Mendola", "jorjaVirtualMachine");
+
+commit;
