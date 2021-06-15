@@ -47,12 +47,12 @@ film_id integer,
 constraint scenes_film_fk foreign key(film_id) references films (film_id) on delete cascade
 );
 
-insert into scenes (scene_name) values 
-("Cioccolateria"),
-("Fontana"),
-("Stazione"),
-("Ballo in casa"),
-("Scena finale");
+insert into scenes (scene_name, film_id) values 
+("Cioccolateria", "1"),
+("Fontana", "2"),
+("Stazione", "3"),
+("Ballo in casa", "4"),
+("Scena finale", "5");
 
 commit;
 
@@ -64,12 +64,12 @@ city_id integer,
 constraint locations_city_fk foreign key(city_id) references cities (city_id) on delete cascade
 );
 
-insert into locations (location_name) values 
-("Café des 2 Moulins"),
-("Fontana di Trevi"),
-("King's Cross"),
-("Downing Street"),
-("Shinjuku");
+insert into locations (location_name, city_id) values 
+("Café des 2 Moulins", "1"),
+("Fontana di Trevi", "2"),
+("King's Cross", "3"),
+("Downing Street", "3"),
+("Shinjuku", "4");
 
 commit;
 
