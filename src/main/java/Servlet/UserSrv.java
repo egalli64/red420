@@ -19,9 +19,9 @@ public class UserSrv extends HttpServlet {
 
 		String url;
 		if (user == null || user.isBlank() || password == null || password.isBlank()) {
-			url = "index.jsp";// TODO
+			url = "index.jsp";
 		} else {
-			url = "citiesRaw.jsp";
+			url = "index.jsp";
 		}
 
 		request.getRequestDispatcher(url).forward(request, response);

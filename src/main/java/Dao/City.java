@@ -5,8 +5,6 @@ public class City {
 	private int id;
 	private String city;
 	private String state;
-	private String location;
-	private String scene;
 
 	public City() {
 	}
@@ -17,9 +15,9 @@ public class City {
 		this.state = state;
 	}
 
-	public City(String scene, String location) {
-		this.setScene(scene);
-		this.setLocation(location);
+	public City(String city, String state) {
+		this.city = city;
+		this.state = state;
 	}
 
 	public int getId() {
@@ -44,22 +42,6 @@ public class City {
 
 	public void setState(String state) {
 		this.state = state;
-	}
-
-	public String getLocation() {
-		return location;
-	}
-
-	public void setLocation(String location) {
-		this.location = location;
-	}
-
-	public String getScene() {
-		return scene;
-	}
-
-	public void setScene(String scene) {
-		this.scene = scene;
 	}
 
 	@Override

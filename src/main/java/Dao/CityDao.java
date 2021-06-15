@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 
 public class CityDao implements AutoCloseable {
 	private static final Logger log = LoggerFactory.getLogger(CityDao.class);
-	private static final String GET_ALL = "SELECT city_id, city_name, state_name, FROM cities";
+	private static final String GET_ALL = "SELECT city_id, city_name, state_name FROM cities";
 	private static final String GET_BY_CITY_ID = "SELECT scene_name, location_name FROM  locations join locations_scenes using(location_id) join scenes using(scene_id) WHERE city_id=?";
 	private Connection conn;
 
