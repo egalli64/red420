@@ -30,14 +30,14 @@ public class ScenesDao implements AutoCloseable {
 		}
 	}
 
-	public List<Scenes> getAll() {
+	public List<Scene> getAll() {
 		log.trace("called");
-		List<Scenes> results = new ArrayList<>();
+		List<Scene> results = new ArrayList<>();
 
 		try (Statement stmt = conn.createStatement(); //
 				ResultSet rs = stmt.executeQuery(GET_ALL)) {
 			while (rs.next()) {
-				Scenes cur = new Scenes(rs.getInt(1), rs.getString(2), rs.getInt(3));
+				Scene cur = new Scene(rs.getInt(1), rs.getString(2));
 				results.add(cur);
 			}
 		} catch (SQLException se) {
@@ -48,15 +48,15 @@ public class ScenesDao implements AutoCloseable {
 		return results;
 	}
 
-	public List<Scenes> getFK(int film_id) {
+	public List<Scene> getByFilmId(int id) {
 		log.trace("called");
-		List<Scenes> results = new ArrayList<>();
+		List<Scene> results = new ArrayList<>();
 
 		try (PreparedStatement ps = conn.prepareStatement(GET_BY_FK); //
 				ResultSet rs = ps.executeQuery()) {
-			ps.setInt(3, film_id);
+			ps.setInt(1, id); // posizione relativa punti di domanda
 			while (rs.next()) {
-				Scenes cur = new Scenes(rs.getInt(1), rs.getString(2), rs.getInt(3));
+				Scene cur = new Scene(rs.getInt(1), rs.getString(2));
 				results.add(cur);
 			}
 		} catch (SQLException se) {

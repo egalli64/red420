@@ -1,3 +1,4 @@
+
 package Servlet;
 
 import java.io.IOException;
@@ -15,8 +16,8 @@ import org.slf4j.LoggerFactory;
 import Dao.ScenesDao;
 
 @SuppressWarnings("serial")
-@WebServlet("/scenes")
-public class ScenesServlet extends HttpServlet {
+@WebServlet("/scenesByFilm")
+public class ScenesFilmSrv extends HttpServlet {
 	private static final Logger log = LoggerFactory.getLogger(ScenesServlet.class);
 
 	@Resource(name = "jdbc/red")
@@ -26,9 +27,12 @@ public class ScenesServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		log.trace("called");
+		String param = request.getParameter("filmId");
 		try (ScenesDao dao = new ScenesDao(ds)) {
-			request.setAttribute("scenes", dao.getAll());
+			int filmId = Integer.parseInt(param);
+			request.setAttribute("scenes", dao.getByFilmId(filmId));
 			request.getRequestDispatcher("scenes.jsp").forward(request, response);
+
 		}
 	}
 }
