@@ -34,7 +34,7 @@ insert into films (film_name, film_year, film_director) values
 ("Amelie", "2001", "Jeunet"),
 ("La dolce vita", "1960", "Fellini"),
 ("Harry Potter", "2001", "Columbus"),
-("Love Actually", "2003", "Curtis"),
+("Love, Actually", "2003", "Curtis"),
 ("Lost in translation", "2003", "Coppola");
 
 commit;
