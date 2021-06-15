@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -28,9 +27,8 @@
     <p class="lead text-center">Siamo Simona, Elisa, Giorgia, Giulia, Alessia, Marzia e Sabrina.</p>
     <p class="lead text-center">I tour perfetti per i tuoi film preferiti</p>
     <p class="lead text-center">Entra nel sito e scopri gli itinerari disponibili in pochi click</p>
-    <p class="lead text-center">Scegli il percorso pi� adatto a te e immergiti nella magia dei set che hanno fatto la storia del cinema</p>
-    <p class="lead text-center">In fondo... che cos'� un film, se non un viaggio da seduti?</p>
-
+    <p class="lead text-center">Scegli il percorso più adatto a te e immergiti nella magia dei set che hanno fatto la storia del cinema</p>
+    <p class="lead text-center">In fondo... che cos'è un film, se non un viaggio da seduti?</p>
 
     <div class="container">
       <div class="row">
@@ -50,13 +48,7 @@
         </div>
         <div class="col"></div>
       </div>
-
-
     </div>
   </div>
-
-
-
 </body>
-
 </html>
