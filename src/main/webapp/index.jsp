@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 
@@ -26,8 +28,8 @@
     <p class="lead text-center">Siamo Simona, Elisa, Giorgia, Giulia, Alessia, Marzia e Sabrina.</p>
     <p class="lead text-center">I tour perfetti per i tuoi film preferiti</p>
     <p class="lead text-center">Entra nel sito e scopri gli itinerari disponibili in pochi click</p>
-    <p class="lead text-center">Scegli il percorso più adatto a te e immergiti nella magia dei set che hanno fatto la storia del cinema</p>
-    <p class="lead text-center">In fondo... che cos'è un film, se non un viaggio da seduti?</p>
+    <p class="lead text-center">Scegli il percorso piï¿½ adatto a te e immergiti nella magia dei set che hanno fatto la storia del cinema</p>
+    <p class="lead text-center">In fondo... che cos'ï¿½ un film, se non un viaggio da seduti?</p>
 
 
     <div class="container">
@@ -37,7 +39,7 @@
           <form>
             <div class="mb-3">
               <label for="exampleInputName1" class="form-label">Nome Utente</label>
-              <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="nameHelp">
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="nameHelp">
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
