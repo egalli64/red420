@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
-@WebServlet("/scenes")
+@WebServlet("/user")
 public class UserSrv extends HttpServlet {
 
 	@Override
