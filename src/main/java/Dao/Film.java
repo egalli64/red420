@@ -1,14 +1,14 @@
 package Dao;
 
-public class Scene {
+public class Film {
 
 	private int id;
 	private String name;
 
-	public Scene() {
+	public Film() {
 	}
 
-	public Scene(int id, String name) {
+	public Film(int id, String name) {
 		this.id = id;
 		this.name = name;
 	}

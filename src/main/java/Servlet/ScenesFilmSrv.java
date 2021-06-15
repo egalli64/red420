@@ -13,12 +13,12 @@ import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import Dao.ScenesDao;
+import Dao.FilmsDao;
 
 @SuppressWarnings("serial")
 @WebServlet("/scenesByFilm")
 public class ScenesFilmSrv extends HttpServlet {
-	private static final Logger log = LoggerFactory.getLogger(ScenesServlet.class);
+	private static final Logger log = LoggerFactory.getLogger(FilmServlet.class);
 
 	@Resource(name = "jdbc/red")
 	private DataSource ds;
@@ -28,7 +28,7 @@ public class ScenesFilmSrv extends HttpServlet {
 			throws ServletException, IOException {
 		log.trace("called");
 		String param = request.getParameter("filmId");
-		try (ScenesDao dao = new ScenesDao(ds)) {
+		try (FilmsDao dao = new FilmsDao(ds)) {
 			int filmId = Integer.parseInt(param);
 			request.setAttribute("scenes", dao.getByFilmId(filmId));
 			request.getRequestDispatcher("scenes.jsp").forward(request, response);

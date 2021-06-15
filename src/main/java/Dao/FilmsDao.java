@@ -14,13 +14,13 @@ import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ScenesDao implements AutoCloseable {
-	private static final Logger log = LoggerFactory.getLogger(ScenesDao.class);
+public class FilmsDao implements AutoCloseable {
+	private static final Logger log = LoggerFactory.getLogger(FilmsDao.class);
 	private static final String GET_ALL = "SELECT scene_id, scene_name, film_id, FROM scenes";
 	private static final String GET_BY_FK = "SELECT scene_id, scene_name, FROM scenes where film_id=?";
 	private Connection conn;
 
-	public ScenesDao(DataSource ds) {
+	public FilmsDao(DataSource ds) {
 		log.trace("called");
 
 		try {
@@ -30,14 +30,14 @@ public class ScenesDao implements AutoCloseable {
 		}
 	}
 
-	public List<Scene> getAll() {
+	public List<Film> getAll() {
 		log.trace("called");
-		List<Scene> results = new ArrayList<>();
+		List<Film> results = new ArrayList<>();
 
 		try (Statement stmt = conn.createStatement(); //
 				ResultSet rs = stmt.executeQuery(GET_ALL)) {
 			while (rs.next()) {
-				Scene cur = new Scene(rs.getInt(1), rs.getString(2));
+				Film cur = new Film(rs.getInt(1), rs.getString(2));
 				results.add(cur);
 			}
 		} catch (SQLException se) {
@@ -48,15 +48,15 @@ public class ScenesDao implements AutoCloseable {
 		return results;
 	}
 
-	public List<Scene> getByFilmId(int id) {
+	public List<Film> getByFilmId(int id) {
 		log.trace("called");
-		List<Scene> results = new ArrayList<>();
+		List<Film> results = new ArrayList<>();
 
 		try (PreparedStatement ps = conn.prepareStatement(GET_BY_FK); //
 				ResultSet rs = ps.executeQuery()) {
 			ps.setInt(1, id); // posizione relativa punti di domanda
 			while (rs.next()) {
-				Scene cur = new Scene(rs.getInt(1), rs.getString(2));
+				Film cur = new Film(rs.getInt(1), rs.getString(2));
 				results.add(cur);
 			}
 		} catch (SQLException se) {
