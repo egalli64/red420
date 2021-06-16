@@ -1,6 +1,6 @@
 package Dao;
 
-public class Location {
+public class Location{
 
 	private int id;
 	private String name;
@@ -13,6 +13,9 @@ public class Location {
 		this.id = id;
 		this.name = name;
 		this.cityId = cityId;
+	}
+	public Location( String name) {
+		this.name = name;
 	}
 
 	public int getId() {

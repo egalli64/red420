@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 public class CityDao implements AutoCloseable {
 	private static final Logger log = LoggerFactory.getLogger(CityDao.class);
 	private static final String GET_ALL = "SELECT city_id, city_name, state_name FROM cities";
-	private static final String GET_BY_CITY_ID = "SELECT scene_name, location_name FROM  locations join locations_scenes using(location_id) join scenes using(scene_id) WHERE city_id=?";
+	private static final String GET_BY_CITY_ID = "SELECT film_name, film_director, film_year FROM cities join locations using(city_id) join locations_scenes using(location_id) join scenes using (scene_id) join films using (film_id) WHERE city_id=?";
 	private Connection conn;
 
 	public CityDao(DataSource ds) {
@@ -48,20 +48,20 @@ public class CityDao implements AutoCloseable {
 		return results;
 	}
 
-	public List<City> getByCityId(int id) {
+	public List<Film> getByCityId(int id) {
 		log.trace("called");
-		List<City> results = new ArrayList<>();
+		List<Film> results = new ArrayList<>();
 
 		try (PreparedStatement ps = conn.prepareStatement(GET_BY_CITY_ID); //
 				ResultSet rs = ps.executeQuery()) {
 			ps.setInt(1, id);
 			while (rs.next()) {
-				City cur = new City(rs.getString(1), rs.getString(2));
+				Film cur = new Film (rs.getString(1),rs.getString(2),rs.getInt(3));
 				results.add(cur);
 			}
 		} catch (SQLException se) {
 			log.error("Città non trovata: " + se.getMessage());
-			throw new IllegalStateException("Database issue " + se.getMessage());
+			throw new IllegalStateException("Problema nel database " + se.getMessage());
 		}
 
 		return results;

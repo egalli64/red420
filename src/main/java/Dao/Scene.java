@@ -15,6 +15,11 @@ public class Scene {
 		this.filmId = filmId;
 	}
 
+	public Scene(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
 	public int getId() {
 		return id;
 	}

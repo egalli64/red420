@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 
 public class FilmsDao implements AutoCloseable {
 	private static final Logger log = LoggerFactory.getLogger(FilmsDao.class);
-	private static final String GET_ALL = "SELECT scene_id, scene_name, film_id, FROM scenes";
+	private static final String GET_ALL = "SELECT scene_id, scene_name, FROM scenes";
 	private static final String GET_BY_FK = "SELECT scene_id, scene_name, FROM scenes where film_id=?";
 	private Connection conn;
 
@@ -30,14 +30,14 @@ public class FilmsDao implements AutoCloseable {
 		}
 	}
 
-	public List<Film> getAll() {
+	public List<Scene> getAll() {
 		log.trace("called");
-		List<Film> results = new ArrayList<>();
+		List<Scene> results = new ArrayList<>();
 
 		try (Statement stmt = conn.createStatement(); //
 				ResultSet rs = stmt.executeQuery(GET_ALL)) {
 			while (rs.next()) {
-				Film cur = new Film(rs.getInt(1), rs.getString(2));
+				Scene cur = new Scene(rs.getInt(1), rs.getString(2));
 				results.add(cur);
 			}
 		} catch (SQLException se) {
@@ -48,15 +48,15 @@ public class FilmsDao implements AutoCloseable {
 		return results;
 	}
 
-	public List<Film> getByFilmId(int id) {
+	public List<Scene> getByFilmId(int id) {
 		log.trace("called");
-		List<Film> results = new ArrayList<>();
+		List<Scene> results = new ArrayList<>();
 
 		try (PreparedStatement ps = conn.prepareStatement(GET_BY_FK); //
 				ResultSet rs = ps.executeQuery()) {
 			ps.setInt(1, id); // posizione relativa punti di domanda
 			while (rs.next()) {
-				Film cur = new Film(rs.getInt(1), rs.getString(2));
+				Scene cur = new Scene(rs.getInt(1), rs.getString(2));
 				results.add(cur);
 			}
 		} catch (SQLException se) {

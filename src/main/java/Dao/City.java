@@ -20,6 +20,10 @@ public class City {
 		this.state = state;
 	}
 
+	public City(String city) {
+		this.city = city;
+	}
+
 	public int getId() {
 		return id;
 	}

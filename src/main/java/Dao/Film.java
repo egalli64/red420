@@ -4,13 +4,23 @@ public class Film {
 
 	private int id;
 	private String name;
+	private String director;
+	private int year;
 
 	public Film() {
 	}
 
-	public Film(int id, String name) {
+	public Film(int id, String name, String director, int year) {
 		this.id = id;
 		this.name = name;
+		this.director = director;
+		this.year = year;
+	}
+
+	public Film(String name, String director, int year) {
+		this.name = name;
+		this.director = director;
+		this.year = year;
 	}
 
 	public int getId() {
@@ -29,9 +39,25 @@ public class Film {
 		this.name = name;
 	}
 
+	public String getDirector() {
+		return director;
+	}
+
+	public void setDirector(String director) {
+		this.director = director;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
 	@Override
 	public String toString() {
-		return "Scene [id=" + id + ", name=" + name + "]";
+		return "Film [id=" + id + ", name=" + name + ", director=" + director + ", year=" + year + "]";
 	}
 
 }
