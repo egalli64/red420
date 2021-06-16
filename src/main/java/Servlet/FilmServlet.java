@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import Dao.FilmsDao;
+import Dao.FilmDao;
 
 @SuppressWarnings("serial")
 @WebServlet("/scenes")
@@ -26,7 +26,7 @@ public class FilmServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		log.trace("called");
-		try (FilmsDao dao = new FilmsDao(ds)) {
+		try (FilmDao dao = new FilmDao(ds)) {
 			request.setAttribute("scenes", dao.getAll());
 			request.getRequestDispatcher("scenes.jsp").forward(request, response);
 		}

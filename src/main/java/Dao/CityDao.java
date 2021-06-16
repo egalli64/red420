@@ -52,18 +52,20 @@ public class CityDao implements AutoCloseable {
 		log.trace("called");
 		List<Film> results = new ArrayList<>();
 
-		try (PreparedStatement ps = conn.prepareStatement(GET_BY_CITY_ID); //
-				ResultSet rs = ps.executeQuery()) {
+		try (PreparedStatement ps = conn.prepareStatement(GET_BY_CITY_ID)) { //
 			ps.setInt(1, id);
-			while (rs.next()) {
-				Film cur = new Film (rs.getString(1),rs.getString(2),rs.getInt(3));
-				results.add(cur);
+			try (ResultSet rs = ps.executeQuery()) {
+				while (rs.next()) {
+					Film cur = new Film(rs.getString(1), rs.getString(2), rs.getInt(3));
+					results.add(cur);
+				}
+			} catch (SQLException se) {
+				log.error("Città non trovata: " + se.getMessage());
+				throw new IllegalStateException("Problema nel database " + se.getMessage());
 			}
-		} catch (SQLException se) {
-			log.error("Città non trovata: " + se.getMessage());
-			throw new IllegalStateException("Problema nel database " + se.getMessage());
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
-
 		return results;
 	}
 

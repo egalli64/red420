@@ -14,13 +14,13 @@ import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class FilmsDao implements AutoCloseable {
-	private static final Logger log = LoggerFactory.getLogger(FilmsDao.class);
-	private static final String GET_ALL = "SELECT scene_id, scene_name, FROM scenes";
-	private static final String GET_BY_FK = "SELECT scene_id, scene_name, FROM scenes where film_id=?";
+public class FilmDao implements AutoCloseable {
+	private static final Logger log = LoggerFactory.getLogger(FilmDao.class);
+	private static final String GET_ALL = "SELECT scene_id, scene_name FROM scenes";
+	private static final String GET_BY_FK = "SELECT scene_id, scene_name FROM scenes where film_id=?";
 	private Connection conn;
 
-	public FilmsDao(DataSource ds) {
+	public FilmDao(DataSource ds) {
 		log.trace("called");
 
 		try {
@@ -52,18 +52,20 @@ public class FilmsDao implements AutoCloseable {
 		log.trace("called");
 		List<Scene> results = new ArrayList<>();
 
-		try (PreparedStatement ps = conn.prepareStatement(GET_BY_FK); //
-				ResultSet rs = ps.executeQuery()) {
-			ps.setInt(1, id); // posizione relativa punti di domanda
-			while (rs.next()) {
-				Scene cur = new Scene(rs.getInt(1), rs.getString(2));
-				results.add(cur);
+		try (PreparedStatement ps = conn.prepareStatement(GET_BY_FK)) {
+			ps.setInt(1, id);
+			try (ResultSet rs = ps.executeQuery()) { // posizione relativa punti di domanda
+				while (rs.next()) {
+					Scene cur = new Scene(rs.getInt(1), rs.getString(2));
+					results.add(cur);
+				}
+			} catch (SQLException se) {
+				log.error("Can't get scenes: " + se.getMessage());
+				throw new IllegalStateException("Database issue " + se.getMessage());
 			}
-		} catch (SQLException se) {
-			log.error("Can't get scenes: " + se.getMessage());
-			throw new IllegalStateException("Database issue " + se.getMessage());
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
-
 		return results;
 	}
 

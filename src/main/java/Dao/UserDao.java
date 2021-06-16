@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 
 public class UserDao implements AutoCloseable {
 	private static final Logger log = LoggerFactory.getLogger(UserDao.class);
-	private static final String GET_USER_BY_NAME = "SELECT user_name, user_password, FROM users WHERE user_name=? and user_password=?";
+	private static final String GET_USER_BY_NAME = "SELECT user_name, user_password FROM users WHERE user_name=? and user_password=?";
 	private Connection conn;
 
 	public UserDao(DataSource ds) {
@@ -32,19 +32,22 @@ public class UserDao implements AutoCloseable {
 		log.trace("called");
 		List<User> results = new ArrayList<>();
 
-		try (PreparedStatement ps = conn.prepareStatement(GET_USER_BY_NAME); //
-				ResultSet rs = ps.executeQuery()) {
+		try (PreparedStatement ps = conn.prepareStatement(GET_USER_BY_NAME)) {
 			ps.setString(1, userName);
 			ps.setString(2, password);
-			while (rs.next()) {
-				User cur = new User(rs.getString(1), rs.getString(2));
-				results.add(cur);
-			}
-		} catch (SQLException se) {
-			log.error("Login error: " + se.getMessage());
-			throw new IllegalStateException("Database issue " + se.getMessage());
-		}
+			try (ResultSet rs = ps.executeQuery()) {
 
+				while (rs.next()) {
+					User cur = new User(rs.getString(1), rs.getString(2));
+					results.add(cur);
+				}
+			} catch (SQLException se) {
+				log.error("Login error: " + se.getMessage());
+				throw new IllegalStateException("Database issue " + se.getMessage());
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 		return results;
 	}
 
