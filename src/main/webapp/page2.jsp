@@ -53,11 +53,11 @@
                     <div class="card" style="width: 18rem;">
                         <img src="./img/roma.jpg" class="card-img-top" alt="Aereo">
                         <div class="card-body">
-                            <h5 class="card-title">Città</h5>
+                            <h5 class="card-title">Cittï¿½</h5>
                             <p class="card-text">Vivi un emozionante tour tra i set di grandi film girati nella tua
-                                città
+                                cittï¿½
                                 preferita! Che aspetti?</p>
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="background-color: rgb(167, 52, 52);">
                                     <option selected>Scoprile tutte...</option>
                                     <option value="Amelie">Parigi</option>
                                     <option value="La Dolce Vita">Roma</option>
