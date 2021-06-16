@@ -28,7 +28,7 @@ public class FilmServlet extends HttpServlet {
 		log.trace("called");
 		try (FilmDao dao = new FilmDao(ds)) {
 			request.setAttribute("scenes", dao.getAll());
-			request.getRequestDispatcher("scenes.jsp").forward(request, response);
+			request.getRequestDispatcher("page3.jsp").forward(request, response);
 		}
 	}
 }
