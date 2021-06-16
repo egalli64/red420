@@ -1,0 +1,16 @@
+#title{
+    color:rgb(221, 179, 74);
+    border-left: rgb(221, 179, 74);
+}
+body {
+    background-image: url(https://c.pxhere.com/photos/28/1f/road_straight_future_way_forest_sad_lonely_loneliness-1087338.jpg!d);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-size:cover;
+}
+
+.card {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    position:relative;
+}
