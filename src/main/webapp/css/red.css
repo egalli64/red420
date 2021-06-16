@@ -3,36 +3,13 @@
     border-left: rgb(221, 179, 74);
 }
 body {
-    background-image:url(https://www.viralnovelty.net/wp-content/uploads/2016/09/IMG_9316.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url(https://images.designtrends.com/wp-content/uploads/2016/11/03150816/Black-and-White-Travel-Photography.jpg);
     background-size:cover;
 }
 
-h1 {
-    color:rgb(0, 0, 0);
-    font-weight:900;
-    font-family:fantasy;
-    text-align: center;
-    font-style: oblique;
-    margin-left: 10cm;
-    margin-right: 10cm;
-    border: 100px;
-}
 h2 {
-    color:rgb(54, 53, 52);
-    text-align:center;
-    font-style: oblique;
-    margin-left: 5cm;
-    margin-right: 5cm;
-    border: 30px;
-    position: fixed;
+    font-family: sans-serif;
 }
 p {
-    font-family: sans-serif;
-    font-size: large;
-    text-align: center;
-    font-style:oblique;
-    font-stretch: narrower;
-    position: relative;
+    font-family:cursive;
 }

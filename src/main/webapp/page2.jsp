@@ -27,20 +27,20 @@
         <p class="lead text-center">Scegli il contenuto che preferisci e scopri numerosi itinerari creati ad hoc per te!
         </p>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm d-flex justify-content-center text-center">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/ladolcevita.jpg" class="card-img-top" alt="ladolcevita">
                         <div class="card-body">
                             <h5 class="card-title">Film</h5>
                             <p class="card-text">Guarda gli itinerari e renditi protagonista del film che preferisci, il
                                 FilmAdvisor sei tu! </p>
-                            <a href="#" class="btn btn-primary">Scoprili ora</a>
+                            <a href="#" class="btn btn-primary" style="background-color: rgb(167, 52, 52);">Scoprili ora</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm d-flex justify-content-center text-center">
                     <div class="card" style="width: 18rem;">
                         <img src="./img/roma.jpg" class="card-img-top" alt="Aereo">
                         <div class="card-body">
@@ -48,13 +48,14 @@
                             <p class="card-text">Vivi un emozionante tour tra i set di grandi film girati nella tua
                                 città
                                 preferita! Che aspetti?</p>
-                            <a href="#" class="btn btn-primary">Scoprili ora</a>
+                            <a href="#" class="btn btn-primary" style="background-color: rgb(167, 52, 52);">Scoprili ora</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
