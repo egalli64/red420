@@ -1,0 +1,16 @@
+#title{
+    color:rgb(221, 179, 74);
+    border-left: rgb(221, 179, 74);
+}
+body {
+    background-image: url(https://media.istockphoto.com/photos/old-concrete-texture-seamless-wall-background-picture-id994081950?k=6&m=994081950&s=612x612&w=0&h=M7VfuA9jWGyeKJ0Qe6HG_BRR_0mZ05PnvdziqnNdHa4=);
+    background-size: cover;
+}
+
+nav {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
