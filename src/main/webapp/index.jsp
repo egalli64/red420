@@ -58,10 +58,10 @@
 					preferiti!</p>
 				<p class="lead text-center">Entra nel sito e scopri gli
 					itinerari disponibili in pochi click</p>
-				<p class="lead text-center">Scegli il percorso piÃ¹ adatto a te
+				<p class="lead text-center">Scegli il percorso più adatto a te
 					e immergiti nella magia dei set che hanno fatto la storia del
 					cinema</p>
-				<p class="lead text-center">In fondo... che cos'Ã¨ un film, se
+				<p class="lead text-center">In fondo... che cos'è un film, se
 					non un viaggio da seduti?</p>
 				<form action="user" method="POST">
 					<div class="mb-3">
