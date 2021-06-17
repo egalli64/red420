@@ -217,11 +217,10 @@
 		</div>
 		</div>
 	</c:if>
-	<nav class="navbar navbar-light"
-		style="background-color: rgb(167, 52, 52);">
+	<nav class="navbar navbar-light" style="background-color: rgb(167, 52, 52);">
 		<div class="container-fluid">
-			<a class="navbar-brand d-flex align-content-start flex-wrap" href="#">
-				<a href="index.jsp" style="color: black;">Back Home Page</a>
+			<a class="navbar-brand d-flex align-content-start flex-wrap" a href="page2.jsp" style="color: black;">
+				Back Home Page
 			</a>
 
 			<footer>

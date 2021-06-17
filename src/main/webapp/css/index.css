@@ -13,3 +13,9 @@ h2 {
 p {
     font-family:cursive;
 }
+
+svg {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
