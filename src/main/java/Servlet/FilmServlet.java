@@ -15,19 +15,20 @@ import org.slf4j.LoggerFactory;
 import Dao.FilmDao;
 
 @SuppressWarnings("serial")
-@WebServlet("/scenes")
+@WebServlet("/film")
 public class FilmServlet extends HttpServlet {
 	private static final Logger log = LoggerFactory.getLogger(FilmServlet.class);
-
+	
 	@Resource(name = "jdbc/red")
 	private DataSource ds;
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String filmId = request.getParameter("id");
 		log.trace("called");
 		try (FilmDao dao = new FilmDao(ds)) {
-			request.setAttribute("scenes", dao.getAll());
+			request.setAttribute("film", dao.getAll());
 			request.getRequestDispatcher("page3.jsp").forward(request, response);
 		}
 	}
