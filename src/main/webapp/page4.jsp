@@ -100,7 +100,7 @@
 				</div>
 			</div>
 	</c:if>
-	<c:if test="${param.cityId==3}">
+	<c:if test="${param.cityId==0 or param.cityId==3}">
 		<div class="container text-center">
 			<br> <br>
 			<h1>
@@ -137,7 +137,7 @@
 
 		</div>
 	</c:if>
-	<c:if test="${param.cityId==3}">
+	<c:if test="${param.cityId==0 or param.cityId==3}">
 		<div class="container text-center">
 			<br> <br>
 			<h1>
@@ -178,7 +178,7 @@
 
 		</div>
 	</c:if>
-	<c:if test="${param.cityId==4}">
+	<c:if test="${param.cityId==0 or param.cityId==4}">
 		<div class="container text-center">
 			<br> <br>
 			<h1>
@@ -217,11 +217,11 @@
 		</div>
 		</div>
 	</c:if>
-	<nav class="navbar navbar-light" style="background-color: rgb(167, 52, 52);">
+	<nav class="navbar navbar-light"
+		style="background-color: rgb(167, 52, 52);">
 		<div class="container-fluid">
-			<a class="navbar-brand d-flex align-content-start flex-wrap" a href="page2.jsp" style="color: black;">
-				Back Home Page
-			</a>
+			<a class="navbar-brand d-flex align-content-start flex-wrap" a
+				href="page2.jsp" style="color: black;"> Back Home Page </a>
 
 			<footer>
 				© Tutti i diritti riservati a <b>RED</b>
