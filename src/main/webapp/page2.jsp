@@ -41,14 +41,14 @@
 						<img src="./img/ladolcevita.jpg" class="card-img-top"
 							alt="ladolcevita">
 						<div class="card-body">
-							<h5 class="card-title">Film</h5>
+							<h5 class="card-title">Film</h5><!-- Da qui ottengo le scene dei film in particolare-->
 							<p class="card-text">Guarda gli itinerari e renditi
 								protagonista del film che preferisci, il FilmAdvisor sei tu!</p>
-							<form action="film" method="get">
+							<form action="scenesByFilm" method="get">
 								<select class="form-select form-select-sm"
 									aria-label=".form-select-sm example"
 									style="background-color: rgb(167, 52, 52);" name="id">
-									<option selected>Scoprili tutti...</option>
+									<option selected value="0">Scoprili tutti...</option>
 									<option value="1">Amelie</option>
 									<option value="2">La Dolce Vita</option>
 									<option value="3">Harry Potter</option>
@@ -65,10 +65,10 @@
 					<div class="card" style="width: 18rem;">
 						<img src="./img/roma.jpg" class="card-img-top" alt="Aereo">
 						<div class="card-body">
-							<h5 class="card-title">Città</h5>
+							<h5 class="card-title">Città</h5> <!-- Da qui ottengo i trailer e i film in generale-->
 							<p class="card-text">Vivi un emozionante tour tra i set di
 								grandi film girati nella tua città preferita! Che aspetti?</p>
-							<form action="cityByFilm" method="get">
+							<form action="cities" method="get">
 								<select class="form-select form-select-sm"
 									aria-label=".form-select-sm example"
 									style="background-color: rgb(167, 52, 52);">
