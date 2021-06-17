@@ -4,7 +4,6 @@
 	<html>
 	
 	<head>
-	<head>
 	<title>FilmAdvisor</title>
 	<meta charset="utf-8">
 	<meta name="viewport"
@@ -48,16 +47,13 @@
 									<select class="form-select form-select-sm"
 										aria-label=".form-select-sm example"
 										style="background-color: rgb(167, 52, 52);" name="id">
-										<option selected>Scoprili tutti...</option>
+										<option selected value="0">Scoprili tutti...</option>
 										<option value="1">Amelie</option>
 										<option value="2">La Dolce Vita</option>
 										<option value="3">Harry Potter</option>
 										<option value="4">Love, Actually</option>
 										<option value="5">Lost in Translation</option>
-
-										
 									</select>
-									
 									<br>
 									<input type="submit" class="btn-check" id="btn-check"
 										autocomplete="off"> <label class="btn btn-primary"
@@ -73,23 +69,20 @@
 								<h5 class="card-title">Citt�</h5>
 								<p class="card-text">Vivi un emozionante tour tra i set di
 									grandi film girati nella tua citt� preferita! Che aspetti?</p>
-								<form action="cityByFilm" method="get">
-									<select class="form-select form-select-sm"
+								<form action="page4.jsp" method="get">
+									<select name="cityId" class="form-select form-select-sm"
 										aria-label=".form-select-sm example"
 										style="background-color: rgb(167, 52, 52);">
-										<option selected>Scoprile tutte...</option>
+										<option value="1" selected>Scoprile tutte...</option>
 										<option value="1">Parigi</option>
 										<option value="2">Roma</option>
 										<option value="3">Londra</option>
 										<option value="4">Tokyo</option>
-	
-									
 									</select>
-									
 									<br>
-									<input type="submit" class="btn-check" id="btn-check"
+									<input type="submit" class="btn-check" id="btn-city"
 										autocomplete="off"> <label class="btn btn-primary"
-										for="btn-check" style="background-color: rgb(167, 52, 52);">Vai!</label>
+										for="btn-city" style="background-color: rgb(167, 52, 52);">Vai!</label>
 								</form>
 							</div>
 						</div>
