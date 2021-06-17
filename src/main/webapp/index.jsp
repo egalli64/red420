@@ -80,8 +80,7 @@
 				</c:if>
 				<c:if test="${logged != null }">
 					<div class="container-fluid">
-						<button type="button" class="btn btn-primary" a href="page2.jsp">Back
-							to Home page</button>
+						<button type="button" class="btn btn-primary" a href="page2.jsp">Iniziamo!</button>
 					</div>
 				</c:if>
 			</div>

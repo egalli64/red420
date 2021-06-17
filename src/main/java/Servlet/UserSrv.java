@@ -31,7 +31,6 @@ public class UserSrv extends HttpServlet {
 			if (dao.getUserByName(userName, password).size() == 1) {
 				HttpSession session = request.getSession();
 				session.setAttribute("logged", userName);
-
 				request.getRequestDispatcher("page2.jsp").forward(request, response);
 			} else {
 				request.getRequestDispatcher("index.jsp").forward(request, response);
