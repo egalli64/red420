@@ -25,17 +25,18 @@ public class UserSrv extends HttpServlet {
 		String password = request.getParameter("password");
 		if (userName == null || userName.isBlank() || password == null || password.isBlank()) {
 			request.getRequestDispatcher("index.jsp").forward(request, response);
+			return;
 		}
+		String uri = "index.jsp";
 		try (UserDao dao = new UserDao(ds)) {
 
 			if (dao.getUserByName(userName, password).size() == 1) {
 				HttpSession session = request.getSession();
 				session.setAttribute("logged", userName);
-				request.getRequestDispatcher("page2.jsp").forward(request, response);
-			} else {
-				request.getRequestDispatcher("index.jsp").forward(request, response);
-			}
+				uri = "page2.jsp";
+			} 
 		}
+		request.getRequestDispatcher(uri).forward(request, response);
 	}
 }
 //		HttpSession session =request.getSession();
