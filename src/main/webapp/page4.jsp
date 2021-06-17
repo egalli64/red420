@@ -26,7 +26,7 @@
 			<a class="navbar-brand" href="#"> FilmAdvisor </a>
 		</div>
 	</nav>
-	<c:if test="${param.cityId=1}">
+	<c:if test="${param.cityId==1}">
 		<div class="container text-center">
 			<h1>
 				<em><b>Amelie (2001, Jeunet)</b></em>
@@ -63,7 +63,7 @@
 
 		</div>
 	</c:if>
-	<c:if test="${param.cityId=2}">
+	<c:if test="${param.cityId==2}">
 		<div class="container text-center">
 			<br> <br>
 			<h1>
@@ -100,7 +100,7 @@
 				</div>
 			</div>
 	</c:if>
-	<c:if test="${param.cityId=3}">
+	<c:if test="${param.cityId==3}">
 		<div class="container text-center">
 			<br> <br>
 			<h1>
@@ -137,7 +137,7 @@
 
 		</div>
 	</c:if>
-	<c:if test="${param.cityId=3}">
+	<c:if test="${param.cityId==3}">
 		<div class="container text-center">
 			<br> <br>
 			<h1>
@@ -178,7 +178,7 @@
 
 		</div>
 	</c:if>
-	<c:if test="${param.cityId=4}">
+	<c:if test="${param.cityId==4}">
 		<div class="container text-center">
 			<br> <br>
 			<h1>
