@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import Dao.CityDao;
 
 @SuppressWarnings("serial")
-@WebServlet("/cityByfFilm")
+@WebServlet("/cityId")
 public class CityIdSrv extends HttpServlet {
 	private static final Logger log = LoggerFactory.getLogger(CityIdSrv.class);
 
@@ -30,7 +30,7 @@ public class CityIdSrv extends HttpServlet {
 		String param = request.getParameter("cityId");
 		try (CityDao dao = new CityDao(ds)) {
 			int cityId = Integer.parseInt(param);
-			request.setAttribute("cities", dao.getByCityId(cityId));
+			request.setAttribute("città", dao.getByCityId(cityId));
 			request.getRequestDispatcher("page4.jsp").forward(request, response);
 
 		}

@@ -28,6 +28,7 @@ public class CityAllSrv extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		log.trace("called");
+		String param = request.getParameter("cityId");
 		try (CityDao dao = new CityDao(ds)) {
 			request.setAttribute("cities", dao.getAll());
 			request.getRequestDispatcher("page4.jsp").forward(request, response);

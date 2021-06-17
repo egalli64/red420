@@ -27,11 +27,11 @@ public class SceneFilmSrv extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		log.trace("called");
-		String param = request.getParameter("filmId");
+		String param = request.getParameter("id");
 		try (FilmDao dao = new FilmDao(ds)) {
 			int filmId = Integer.parseInt(param);
 			request.setAttribute("scenes", dao.getByFilmId(filmId));
-			request.getRequestDispatcher("scenes.jsp").forward(request, response);
+			request.getRequestDispatcher("page3.jsp").forward(request, response);
 
 		}
 	}

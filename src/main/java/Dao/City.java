@@ -2,15 +2,15 @@ package Dao;
 
 public class City {
 
-	private int id;
+	private int cityId;
 	private String city;
 	private String state;
 
 	public City() {
 	}
 
-	public City(int id, String city, String state) {
-		this.id = id;
+	public City(int cityId, String city, String state) {
+		this.cityId = cityId;
 		this.city = city;
 		this.state = state;
 	}
@@ -24,12 +24,12 @@ public class City {
 		this.city = city;
 	}
 
-	public int getId() {
-		return id;
+	public int getCityId() {
+		return cityId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId(int cityId) {
+		this.cityId = cityId;
 	}
 
 	public String getName() {
@@ -50,7 +50,7 @@ public class City {
 
 	@Override
 	public String toString() {
-		return "City [id=" + id + ", name=" + city + ", state=" + state + "]";
+		return "City [id=" + cityId + ", name=" + city + ", state=" + state + "]";
 	}
 
 }
