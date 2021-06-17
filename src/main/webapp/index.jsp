@@ -65,22 +65,19 @@
 				<c:if test="${logged == null }">
 					<form action="user" method="POST">
 						<div class="mb-3">
-							<label for="exampleInputName1" class="form-label">Nome
-								Utente</label> <input type="text" name="userName" class="form-control"
-								id="exampleInputEmail1" aria-describedby="nameHelp">
-							<div class="mb-3">
-								<label for="exampleInputPassword1" class="form-label">Password</label>
-								<input type="password" name="password" class="form-control"
-									id="exampleInputPassword1">
-								<button type="submit" class="btn btn-primary"
-									style="background-color: rgb(167, 52, 52);">Invia</button>
-							</div>
+							<label for="usr" class="form-label">Nome Utente</label>
+                            <input name="userName" id="usr" class="form-control" required>
+                        </div>
+						<div class="mb-3">
+							<label for="pwd" class="form-label">Password</label>
+							<input type="password" name="password" id="pwd" class="form-control" required>
+							<button type="submit" class="btn btn-primary" style="background-color: rgb(167, 52, 52);">Invia</button>
 						</div>
 					</form>
 				</c:if>
 				<c:if test="${logged != null }">
 					<div class="container-fluid">
-						<a href="page2.jsp"><button type="button" class="btn btn-primary" a href="page2.jsp">Iniziamo!</button></a>
+						<a href="page2.jsp"><button type="button" class="btn btn-primary">Iniziamo!</button></a>
 					</div>
 				</c:if>
 			</div>
