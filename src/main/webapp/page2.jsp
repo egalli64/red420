@@ -64,9 +64,9 @@
 					<div class="card" style="width: 18rem;">
 						<img src="./img/roma.jpg" class="card-img-top" alt="Aereo">
 						<div class="card-body">
-							<h5 class="card-title">Cittï¿½</h5>
+							<h5 class="card-title">Città</h5>
 							<p class="card-text">Vivi un emozionante tour tra i set di
-								grandi film girati nella tua cittï¿½ preferita! Che aspetti?</p>
+								grandi film girati nella tua città preferita! Che aspetti?</p>
 							<form action="page4.jsp" method="get">
 								<select name="cityId" class="form-select form-select-sm"
 									aria-label=".form-select-sm example"
