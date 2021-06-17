@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 
-<head>
+
 <head>
 <title>FilmAdvisor</title>
 <meta charset="utf-8">
@@ -128,7 +128,7 @@
 			</div>
 		</div>
 	</c:if>
-	<c:if test="${param.id==0 or param.id==3}">
+	<c:if test="${param.id==0 or param.id==4}">
 		<div class="container text-center">
 			<h1>
 				<em>Love Actually</em>
@@ -173,7 +173,7 @@
 			</div>
 		</div>
 	</c:if>
-	<c:if test="${param.id==0 or param.id==4}">
+	<c:if test="${param.id==0 or param.id==3}">
 		<div class="container text-center">
 			<h1>
 				<em>Harry Potter</em>

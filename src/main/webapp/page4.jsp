@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+
 <head>
 <title>FilmAdvisor</title>
 <meta charset="utf-8">
