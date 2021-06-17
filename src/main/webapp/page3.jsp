@@ -54,6 +54,7 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
 
     <div class="container text-center">
@@ -176,3 +177,6 @@
             </div>
         </div>
     </div>
+=======
+    
+>>>>>>> 6b7774ee2e757ab7e7c4d677236b6f557f8eb84a
