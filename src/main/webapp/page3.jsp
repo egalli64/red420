@@ -68,18 +68,15 @@
 								loading="lazy"></iframe>
 						</div>
 					</div>
+					<div class="container text-center">
+						<p class="lead text-center"
+							style="font-weight: bold; font-family: cursive;">Per maggiori
+							informazioni sui pacchetti volo+hotel inviaci una richiesta con il
+							form che trovi nella homepage!</p>
 				</div>
 			</div>
 	</c:if>
 	<c:if test="${param.id==0 or param.id==2}">
-		<div class="container text-center">
-			<p class="lead text-center"
-				style="font-weight: bold; font-family: cursive;">Per maggiori
-				informazioni sui pacchetti volo+hotel inviaci una richiesta con il
-				form che trovi nella homepage!</p>
-		</div>
-		</div>
-
 		<div class="container text-center">
 			<h1>
 				<em>La Dolce Vita</em>
