@@ -47,13 +47,13 @@
 						<figure>
 							<br>
 							<p class="lead text-center-justify">A Parigi, al n. 15 di Rue
-								Lepic, c'Ã¨ il caffÃ¨ Des 2 moulins. Ã¨ proprio d'angolo: un
+								Lepic, c'è¨ il caffè¨ Des 2 moulins. È proprio all'angolo: un
 								neon non opprimente, una vetrina illuminata con discrezione,
 								tavolini esterni secondo il gusto francese. Il tutto un po'
 								fuori dal tempo. Potrebbero essere i nostri giorni, potrebbero
-								non esserlo. Ã¨ in questo luogo che lavora AmÃ©lie Poulain, la
-								protagonista de Il favoloso mondo di AmÃ©lie, diretto da
-								Jean-Pierre Jeunet, che Ã¨ diventato nel tempo un vero e proprio
+								non esserlo. È in questo luogo che lavora Amélie Poulain, la
+								protagonista de Il favoloso mondo di Amélie, diretto da
+								Jean-Pierre Jeunet, che è diventato nel tempo un vero e proprio
 								cult.</p>
 
 						</figure>
