@@ -30,7 +30,7 @@ public class CityAllSrv extends HttpServlet {
 		log.trace("called");
 		try (CityDao dao = new CityDao(ds)) {
 			request.setAttribute("cities", dao.getAll());
-			request.getRequestDispatcher("cities.jsp").forward(request, response);
+			request.getRequestDispatcher("page4.jsp").forward(request, response);
 		}
 	}
 }

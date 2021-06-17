@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import Dao.CityDao;
 
 @SuppressWarnings("serial")
-@WebServlet("/filmByCity")
+@WebServlet("/cityByfFilm")
 public class CityIdSrv extends HttpServlet {
 	private static final Logger log = LoggerFactory.getLogger(CityIdSrv.class);
 
