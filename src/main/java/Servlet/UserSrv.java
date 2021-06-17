@@ -10,34 +10,45 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import Dao.UserDao;
 
 @SuppressWarnings("serial")
 @WebServlet("/user")
 public class UserSrv extends HttpServlet {
-	@Resource(name = "jdbc/red")
-	private DataSource ds;
+    private static final Logger log = LoggerFactory.getLogger(UserSrv.class);
 
-	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String userName = request.getParameter("userName");
-		String password = request.getParameter("password");
-		if (userName == null || userName.isBlank() || password == null || password.isBlank()) {
-			request.getRequestDispatcher("index.jsp").forward(request, response);
-			return;
-		}
-		String uri = "index.jsp";
-		try (UserDao dao = new UserDao(ds)) {
+    @Resource(name = "jdbc/red")
+    private DataSource ds;
 
-			if (dao.getUserByName(userName, password).size() == 1) {
-				HttpSession session = request.getSession();
-				session.setAttribute("logged", userName);
-				uri = "page2.jsp";
-			} 
-		}
-		request.getRequestDispatcher(uri).forward(request, response);
-	}
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String userName = request.getParameter("userName");
+        String password = request.getParameter("password");
+
+        log.trace(userName + ", " + password);
+
+        if (userName == null || userName.isBlank() || password == null || password.isBlank()) {
+            request.getRequestDispatcher("index.jsp").forward(request, response);
+            return;
+        }
+        String uri = "index.jsp";
+        try (UserDao dao = new UserDao(ds)) {
+
+            if (dao.getUserByName(userName, password).size() == 1) {
+                HttpSession session = request.getSession();
+                session.setAttribute("logged", userName);
+                uri = "page2.jsp";
+            }
+        }
+
+        log.trace("forwarding to " + uri);
+        request.getRequestDispatcher(uri).forward(request, response);
+    }
 }
 //		HttpSession session =request.getSession();
 //		User user = (User)session.getAttribute("logged");
