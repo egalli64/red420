@@ -70,7 +70,7 @@ insert into locations (location_name, city_id) values
 ("Fontana di Trevi", "2"),
 ("King's Cross", "3"),
 ("Downing Street", "3"),
-("Shinjuku", "4");
+("Shibuya", "4");
 
 commit;
 
