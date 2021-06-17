@@ -46,7 +46,7 @@ crossorigin="anonymous">
 				stesso tempo. Una volta lasciato il locale, perché non visitare il
 				resto del quartiere e scoprire le altre location del film? Il
 				negozio situato in Au Marche dela Butte, la rue des Trois Freres e
-				lâappartamento della protagonista che si trova al numero 56 di
+				l'appartamento della protagonista che si trova al numero 56 di
 				questa rue. Il Café Deux Moulins è aperto tutti i giorni dalle 7
 				del mattino fino a tarda notte.</p>
 		</figure>
@@ -81,7 +81,7 @@ crossorigin="anonymous">
 		</h1>
 		<figure>
 			<p class="lead text-center">"Marcello, come here. Hurry
-				up!". Anita Ekberg con queste parole invita l'attore ciociaro a
+				up!". Anita Ekberg con queste parole invita l'attore ciociaro a
 				seguirla nel bagno nella magnifica fontana romana. Ma Mastroianni
 				era molto freddoloso. La sequenza della Fontana di Trevi del film
 				di Federico Fellini è una delle più famose della cinematografia
@@ -214,7 +214,7 @@ crossorigin="anonymous">
 			<p class="lead text-center">Viaggio in cui lo spettatore si
 				perde insieme ai protagonisti mentre questi si innamorano l'uno
 				dell'altra visitando un mondo nuovo. Tutta l'affascinante e
-				ipnotica "follia" della capitale nipponica viene catturata
+				ipnotica "follia" della capitale nipponica viene catturata
 				dalla regista che contrappone l'euforia della metropoli alla
 				solennità  di altre location visitate dal personaggio della
 				Johansson. Il film si apre sulla finestra di una camera del Park
