@@ -68,19 +68,21 @@
 							<h5 class="card-title">Città</h5> <!-- Da qui ottengo i trailer e i film in generale-->
 							<p class="card-text">Vivi un emozionante tour tra i set di
 								grandi film girati nella tua città preferita! Che aspetti?</p>
-							<form action="cities" method="get">
-								<select class="form-select form-select-sm"
+							<form action="page4.jsp" method="get">
+								<select name="cityId" class="form-select form-select-sm"
 									aria-label=".form-select-sm example"
 									style="background-color: rgb(167, 52, 52);">
-									<option selected>Scoprile tutte...</option>
+									<option value="1" selected>Scoprile tutte...</option>
 									<option value="1">Parigi</option>
 									<option value="2">Roma</option>
 									<option value="3">Londra</option>
 									<option value="4">Londra</option>
 									<option value="5">Tokyo</option>
-								</select> <input type="submit" class="btn-check" id="btn-check"
-									autocomplete="off"> <label class="btn btn-primary"
-									for="btn-check">Vai!</label>
+								</select>
+                                <input type="submit" class="btn-check" id="btn-city"
+									autocomplete="off">
+                                    <label class="btn btn-primary"
+									for="btn-city">Vai!</label>
 							</form>
 						</div>
 					</div>
