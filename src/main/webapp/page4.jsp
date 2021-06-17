@@ -47,7 +47,7 @@
 						<figure>
 							<br>
 							<p class="lead text-center-justify">A Parigi, al n. 15 di Rue
-								Lepic, c'è¨ il caffè¨ Des 2 moulins. È proprio all'angolo: un
+								Lepic, c'è il caffè Des 2 moulins. È proprio all'angolo: un
 								neon non opprimente, una vetrina illuminata con discrezione,
 								tavolini esterni secondo il gusto francese. Il tutto un po'
 								fuori dal tempo. Potrebbero essere i nostri giorni, potrebbero
