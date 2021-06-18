@@ -89,7 +89,7 @@
 	<br>
 	<br>
 	<nav class="navbar navbar-light"
-		style="background-color: rgb(167, 52, 52); position: end;">
+		style="background-color: rgb(167, 52, 52);width=100%; position: end;">
 		<div class="container-fluid">
 			<a class="navbar-brand d-flex align-content-start flex-wrap"> </a>
 
