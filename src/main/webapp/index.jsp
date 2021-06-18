@@ -67,13 +67,13 @@
 					<form action="user" method="POST">
 						<div class="mb-3">
 							<label for="usr" class="form-label">Nome Utente</label> <input
-								name="userName" id="usr" class="form-control" required>
+								name="userName" id="usr" class="form-control"
+								value="${param.userName}" required>
 						</div>
 						<div class="mb-3">
 							<label for="pwd" class="form-label">Password</label> <input
 								type="password" name="password" id="pwd" class="form-control"
-								required> 
-								<br>
+								required value="${param.password}"> <br>
 							<button type="submit" class="btn btn-primary"
 								style="background-color: rgb(167, 52, 52);">Invia</button>
 						</div>
@@ -84,6 +84,12 @@
 						<a href="page2.jsp"><button type="button"
 								class="btn btn-primary">Iniziamo!</button></a> <a href="logout"><button
 								type="button" class="btn btn-primary">Logout</button></a>
+					</div>
+				</c:if>
+				<c:if test="${param.userName != null or param.password !=null }">
+					<div class="alert alert-danger" role="alert">
+						<h4 class="alert-heading">Ops!</h4>
+						<p>Qualcosa è andato storto, ritenta sarai più fortunato!</p>
 					</div>
 				</c:if>
 			</div>
@@ -157,7 +163,7 @@
 		</div>
 	</nav>
 	<nav class="navbar navbar-light"
-		style="background-color: rgb(167, 52, 52); width=100%; position: end;">
+		style="background-color: rgb(167, 52, 52); width =100%; position: end;">
 		<div class="container-fluid">
 			<a class="navbar-brand d-flex align-content-start flex-wrap"> </a>
 
