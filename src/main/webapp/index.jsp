@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -65,19 +66,23 @@
 				<c:if test="${logged == null }">
 					<form action="user" method="POST">
 						<div class="mb-3">
-							<label for="usr" class="form-label">Nome Utente</label>
-                            <input name="userName" id="usr" class="form-control" required>
-                        </div>
+							<label for="usr" class="form-label">Nome Utente</label> <input
+								name="userName" id="usr" class="form-control" required>
+						</div>
 						<div class="mb-3">
-							<label for="pwd" class="form-label">Password</label>
-							<input type="password" name="password" id="pwd" class="form-control" required>
-							<button type="submit" class="btn btn-primary" style="background-color: rgb(167, 52, 52);">Invia</button>
+							<label for="pwd" class="form-label">Password</label> <input
+								type="password" name="password" id="pwd" class="form-control"
+								required>
+							<button type="submit" class="btn btn-primary"
+								style="background-color: rgb(167, 52, 52);">Invia</button>
 						</div>
 					</form>
 				</c:if>
 				<c:if test="${logged != null }">
 					<div class="container-fluid">
-						<a href="page2.jsp"><button type="button" class="btn btn-primary">Iniziamo!</button></a>
+						<a href="page2.jsp"><button type="button"
+								class="btn btn-primary">Iniziamo!</button></a> <a href="Logout"><button
+								type="button" class="btn btn-primary">Logout</button></a>
 					</div>
 				</c:if>
 			</div>
