@@ -55,7 +55,7 @@ crossorigin="anonymous">
 			<div class="row">
 				<div class="col-sm d-flex justify-content-center text-center">
 					<figure>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/0xwMP8n0Hdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="500" height="315" src="https://www.youtube.com/embed/0xwMP8n0Hdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</figure>
 
 				</div>
@@ -63,7 +63,7 @@ crossorigin="anonymous">
 					<div class="col-sm d-flex justify-content-center text-center">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10494.396241324814!2d2.3248694330059387!3d48.884919368639075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4fa272f2b7%3A0xbdfb4a918e2e8b46!2sCaf%C3%A9%20des%202%20Moulins!5e0!3m2!1sit!2sit!4v1623851543008!5m2!1sit!2sit"
-							width="500" height="350" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+							width="500" height="315" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 				</div>
 				<div class="container text-center">
@@ -97,7 +97,7 @@ crossorigin="anonymous">
 			<div class="row">
 				<div class="col-sm d-flex justify-content-center text-center">
 					<figure>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/The8Xi6fKOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="500" height="315" src="https://www.youtube.com/embed/The8Xi6fKOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</figure>
 
 				</div>
@@ -105,7 +105,7 @@ crossorigin="anonymous">
 					<div class="col-sm d-flex justify-content-center text-center">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.619604547128!2d12.481089629594514!3d41.90103727205955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2sFontana%20di%20Trevi!5e0!3m2!1sit!2sit!4v1623914120468!5m2!1sit!2sit"
-							width="500" height="350" style="border: 0;" allowfullscreen=""
+							width="500" height="315" style="border: 0;" allowfullscreen=""
 							loading="lazy"></iframe>
 					</div>
 				</div>
@@ -140,7 +140,7 @@ crossorigin="anonymous">
 			<div class="row">
 				<div class="col-sm d-flex justify-content-center text-center">
 					<figure>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/aUm2K6eDuMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="500" height="315" src="https://www.youtube.com/embed/aUm2K6eDuMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</figure>
 
 				</div>
@@ -148,7 +148,7 @@ crossorigin="anonymous">
 					<div class="col-sm d-flex justify-content-center text-center">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.53481716077!2d-0.12981338486444552!3d51.503403479634514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c56a6cc61d%3A0x2eca1ef309dd9534!2s10%20Downing%20St%2C%20London%20SW1A%202AB%2C%20Regno%20Unito!5e0!3m2!1sit!2sit!4v1623856884240!5m2!1sit!2sit"
-							width="500" height="350" style="border: 0;" allowfullscreen=""
+							width="500" height="315" style="border: 0;" allowfullscreen=""
 							loading="lazy"></iframe>
 					</div>
 				</div>
@@ -183,16 +183,13 @@ crossorigin="anonymous">
 			<div class="row">
 				<div class="col-sm d-flex justify-content-center text-center">
 					<figure>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/az7gZ59jJlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="500" height="315" src="https://www.youtube.com/embed/az7gZ59jJlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</figure>
 
 				</div>
 				<div class="col text-center">
 					<div class="col-sm d-flex justify-content-center text-center">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9998997218395!2d139.75153051443192!3d35.701620080189535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dbb9458e17b%3A0x850a90e0737c0211!2zS0lOR-KAmVMgQ1JPU1MgUi5ILiDmsLTpgZPmqYvlupc!5e0!3m2!1sit!2sit!4v1623856670055!5m2!1sit!2sit"
-							width="500" height="350" style="border: 0;" allowfullscreen=""
-							loading="lazy"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9927.281375655873!2d-0.13436956726058935!3d51.534854921785374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b10c73c4dcd%3A0x616f11fed05d6bb9!2sKing&#39;s%20Cross%2C%20Londra%2C%20Regno%20Unito!5e0!3m2!1sit!2sit!4v1624005110032!5m2!1sit!2sit" width="500" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 				</div>
 			</div>
@@ -232,16 +229,13 @@ crossorigin="anonymous">
 			<div class="row">
 				<div class="col-sm d-flex justify-content-center text-center">
 					<figure>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/gzJhCcb2cvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="500" height="315" src="https://www.youtube.com/embed/gzJhCcb2cvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</figure>
 
 				</div>
 				<div class="col text-center">
 					<div class="col-sm d-flex justify-content-center text-center">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51840.02206357744!2d139.67417767865743!3d35.7015836783633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2059b7fd4b%3A0xec61c68fe232efd2!2sShinjuku%2C%20Tokyo%2C%20Giappone!5e0!3m2!1sit!2sit!4v1623856614138!5m2!1sit!2sit"
-							width="500" height="350" style="border: 0;" allowfullscreen=""
-							loading="lazy"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51862.59144262285!2d139.65759648191585!3d35.66685693043656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2sShibuya%2C%20Tokyo%2C%20Giappone!5e0!3m2!1sit!2sit!4v1624005095486!5m2!1sit!2sit" width="500" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
 					</div>
 				</div>
 			</div>
@@ -266,6 +260,5 @@ crossorigin="anonymous">
 		</footer>
 	</div>
 
-	</div>
 </nav>
 </body>

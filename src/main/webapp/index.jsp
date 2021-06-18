@@ -72,7 +72,8 @@
 						<div class="mb-3">
 							<label for="pwd" class="form-label">Password</label> <input
 								type="password" name="password" id="pwd" class="form-control"
-								required>
+								required> 
+								<br>
 							<button type="submit" class="btn btn-primary"
 								style="background-color: rgb(167, 52, 52);">Invia</button>
 						</div>
@@ -81,7 +82,7 @@
 				<c:if test="${logged != null }">
 					<div class="container-fluid">
 						<a href="page2.jsp"><button type="button"
-								class="btn btn-primary">Iniziamo!</button></a> <a href="Logout"><button
+								class="btn btn-primary">Iniziamo!</button></a> <a href="logout"><button
 								type="button" class="btn btn-primary">Logout</button></a>
 					</div>
 				</c:if>

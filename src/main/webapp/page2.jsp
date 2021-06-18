@@ -86,6 +86,8 @@
 			</div>
 		</div>
 	</div>
+	<br>
+	<br>
 	<nav class="navbar navbar-light"
 		style="background-color: rgb(167, 52, 52); position: end;">
 		<div class="container-fluid">

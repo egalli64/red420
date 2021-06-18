@@ -26,6 +26,7 @@
 			<a class="navbar-brand" href="#"> FilmAdvisor </a>
 		</div>
 	</nav>
+	<br>
 	<c:if test="${param.cityId==0 or param.cityId==1}">
 		<div class="container text-center">
 			<h1>
@@ -37,15 +38,13 @@
 				<div class="row">
 					<div class="col-sm d-flex justify-content-center text-center">
 						<figure>
-							<iframe class="embed-responsive-item"
-								src="https://www.youtube.com/embed/0xwMP8n0Hdo" allowfullscreen
-								alt="#Harry" width=500em height=250em></iframe>
+							<iframe width="500em" height="250em" src="https://www.youtube.com/embed/v_Xp88Fjxj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 						</figure>
 
 					</div>
 					<div class="col text-center">
 						<figure>
-							<br>
 							<p class="lead text-center-justify">A Parigi, al n. 15 di Rue
 								Lepic, c'è il caffè Des 2 moulins. È proprio all'angolo: un
 								neon non opprimente, una vetrina illuminata con discrezione,
@@ -81,8 +80,10 @@
 						</figure>
 
 					</div>
+					<br>
 					<div class="col text-center">
 						<figure>
+						<br>
 							<p class="lead text-center-justify">Marcello, scrittore
 								mancato che lavora per un giornale scandalistico con la scorta
 								di un paparazzo, fa incontri ed esperienze nella Roma mondana,
@@ -90,10 +91,7 @@
 								Viaggio attraverso il disgusto, cinegiornale e affresco di una
 								Roma raccontata come una Babilonia precristiana, affascinante e
 								turpe. Una materia da giornale in rotocalco trasfigurata in
-								epica. Uno spartiacque nel cinema italiano, un film-cerniera
-								nell'itinerario felliniano con la sua costruzione ad affresco, a
-								blocchi narrativi e retrospettivamente un film storico che
-								interpreta con acutezza un momento nella storia d'Italia.</p>
+								epica. </p>
 
 						</figure>
 					</div>
@@ -112,9 +110,7 @@
 				<div class="row">
 					<div class="col-sm d-flex justify-content-center text-center">
 						<figure>
-							<iframe class="embed-responsive-item"
-								src="https://www.youtube.com/embed/az7gZ59jJlk" allowfullscreen
-								alt="#Amelie" width=500em height=270em></iframe>
+							<iframe width="500em" height="250em" src="https://www.youtube.com/embed/rQLfqdLZ49A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</figure>
 
 					</div>
@@ -127,8 +123,7 @@
 								precedenti e che ora approda sul grande schermo. Stiamo parlando
 								di Harry Potter e la pietra filosofale la trasposizione del
 								primo dei sette romanzi che compongono la saga letteraria
-								scritta da Joanne Kathleen Rowling. Harry Potter si è affermato
-								come fenomeno letterario, cinematografico, culturale.</p>
+								scritta da J. K. Rowling. </p>
 
 						</figure>
 					</div>
@@ -158,16 +153,16 @@
 					</div>
 					<div class="col text-center">
 						<figure>
-							<br>
+						
 
 							<p class="lead text-center-justify">Pochi giorni a Natale in
 								una Londra dove l'amore è dappertutto. Dieci storie di ogni
 								risma si intrecciano a formarne una sola: Hugh Grant è il nuovo
 								Premier appena insediatosi e si innamora di una ragazza del suo
-								staff; sua sorella (Emma Thompson) è convinta di essere
-								cornificata dal marito (Alan Rickman) che in effetti è molto
+								staff; sua sorella è convinta di essere
+								cornificata dal marito che in effetti è molto
 								attratto da una collega, che già aveva fatto perdere la testa ad
-								uno scrittore (Colin Firth), il quale fugge in Francia per
+								uno scrittore, il quale fugge in Francia per
 								dimenticarla e lì... Si avvicina il Natale, verso cui convergono
 								tutte queste storie.</p>
 
@@ -215,7 +210,7 @@
 			</div>
 
 		</div>
-		</div>
+	
 	</c:if>
 	<nav class="navbar navbar-light"
 		style="background-color: rgb(167, 52, 52);">
@@ -228,7 +223,6 @@
 			</footer>
 		</div>
 
-		</div>
 	</nav>
 
 
