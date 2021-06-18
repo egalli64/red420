@@ -89,18 +89,19 @@
 	</div>
 	<br>
 	<br>
+	<div class="fixed-bottom">
 	<nav class="navbar navbar-light"
-		style="background-color: rgb(167, 52, 52);width=100%; position: end;">
+		style="background-color: rgb(167, 52, 52);">
 		<div class="container-fluid">
-			<a class="navbar-brand d-flex align-content-start flex-wrap" a 
+		<a class="navbar-brand d-flex align-content-start flex-wrap" a 
 			href="index.jsp" style="color: black;"> Back to Login </a>
-
+			<a class="navbar-brand d-flex align-content-start flex-wrap"> </a>
 			<footer>
 				© Tutti i diritti riservati a <b>RED</b>
 			</footer>
 		</div>
-
 	</nav>
+	</div>
 </body>
 
 </html>

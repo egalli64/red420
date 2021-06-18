@@ -213,6 +213,7 @@
 		</div>
 	
 	</c:if>
+	<div class="fixed-bottom">
 	<nav class="navbar navbar-light"
 		style="background-color: rgb(167, 52, 52);width=100%;position: end;">
 		<div class="container-fluid">
@@ -223,8 +224,6 @@
 				© Tutti i diritti riservati a <b>RED</b>
 			</footer>
 		</div>
-
 	</nav>
-
-
+	</div>
 </body>
