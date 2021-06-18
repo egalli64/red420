@@ -139,8 +139,8 @@
 			<h1>
 				<em><b>Love Actually (2003, Curtis)</b></em>
 			</h1>
-			<br> <br>
-
+			<br>
+            <br>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm d-flex justify-content-center text-center">
@@ -180,7 +180,7 @@
 			<h1>
 				<em><b>Lost in Translation (2003, Coppola)</b></em>
 			</h1>
-			<br> <br>
+			<br> 
 
 			<div class="container-fluid">
 				<div class="row">
@@ -210,16 +210,15 @@
 				</div>
 			</div>
 
-		</div>
-	
+		</div>	
 	</c:if>
+	<br><br>
 	<div class="fixed-bottom">
 	<nav class="navbar navbar-light"
 		style="background-color: rgb(167, 52, 52);width=100%;position: end;">
 		<div class="container-fluid">
 			<a class="navbar-brand d-flex align-content-start flex-wrap" a
 				href="page2.jsp" style="color: black;"> Back Home Page </a>
-
 			<footer>
 				© Tutti i diritti riservati a <b>RED</b>
 			</footer>

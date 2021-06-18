@@ -250,6 +250,7 @@ crossorigin="anonymous">
 	</div>
 
 </c:if>
+<br><br><br>
 <div class="fixed-bottom">
 <nav class="navbar navbar-light"
 	style="background-color: rgb(167, 52, 52); width=100%; position: end;">
